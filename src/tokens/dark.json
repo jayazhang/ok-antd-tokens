@@ -281,5 +281,21 @@
   "focusWarning": "0px 0px 0px 2px rgb(0, 0, 0)",
   "colorMenuDarkBg": "#001529",
   "colorMenuSubItemBg": "#000c17",
-  "paddingTooltipContentVertical": 6
+  "paddingTooltipContentVertical": 6,
+  "colorFillContent": "rgba(255, 255, 255, 0.12)",
+  "colorFillContentHover": "rgba(255, 255, 255, 0.18)",
+  "colorFillAlter": "rgba(255, 255, 255, 0.04)",
+  "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
+  "colorTextPlaceholder": "rgba(255, 255, 255, 0.25)",
+  "colorTextDisabled": "rgba(255, 255, 255, 0.25)",
+  "colorTextHeading": "rgba(255, 255, 255, 0.85)",
+  "colorTextLabel": "rgba(255, 255, 255, 0.65)",
+  "colorTextDescription": "rgba(255, 255, 255, 0.45)",
+  "colorBgTextHover": "rgba(255, 255, 255, 0.12)",
+  "colorBgTextActive": "rgba(255, 255, 255, 0.18)",
+  "colorIcon": "rgba(255, 255, 255, 0.45)",
+  "colorIconHover": "rgba(255, 255, 255, 0.85)",
+  "controlItemBgHover": "rgba(255, 255, 255, 0.08)",
+  "controlItemBgActiveDisabled": "rgba(255, 255, 255, 0.18)",
+  "controlTmpOutline": "rgba(255, 255, 255, 0.04)"
 }
