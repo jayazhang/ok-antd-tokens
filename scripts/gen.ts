@@ -58,6 +58,11 @@ async function run() {
                 }
             }
         }
+        const fontFamilyKey = 'fontFamily';
+        const fontFamilyInTokens = tokens['light/seed'][fontFamilyKey];
+        if (!result[theme][fontFamilyKey].includes(fontFamilyInTokens.value)) {
+            result[theme][fontFamilyKey] = `${fontFamilyInTokens.value}, ${result[theme][fontFamilyKey] || ''}`
+        }
         await fs.writeFileSync(resolve(theme), JSON.stringify(result[theme], null, 2), options);
     }
 
