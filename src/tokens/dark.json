@@ -192,8 +192,21 @@
   "colorInfoTextHover": "#65a9f3",
   "colorInfoText": "#8dc5f8",
   "colorInfoTextActive": "#b7dcfa",
+  "colorBgMask": "rgba(0, 0, 0, 0.45)",
+  "colorFillContent": "rgba(255, 255, 255, 0.12)",
+  "colorFillContentHover": "rgba(255, 255, 255, 0.18)",
+  "colorFillAlter": "rgba(255, 255, 255, 0.04)",
+  "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
   "colorBorderBg": "#141414",
-  "colorIcon": "#0a113a",
+  "colorTextPlaceholder": "rgba(255, 255, 255, 0.25)",
+  "colorTextDisabled": "rgba(255, 255, 255, 0.25)",
+  "colorTextHeading": "rgba(255, 255, 255, 0.85)",
+  "colorTextLabel": "rgba(255, 255, 255, 0.65)",
+  "colorTextDescription": "rgba(255, 255, 255, 0.45)",
+  "colorBgTextHover": "rgba(255, 255, 255, 0.12)",
+  "colorBgTextActive": "rgba(255, 255, 255, 0.18)",
+  "colorIcon": "rgba(255, 255, 255, 0.45)",
+  "colorIconHover": "rgba(255, 255, 255, 0.85)",
   "colorLink": "#1668dc",
   "colorLinkHover": "#3c89e8",
   "colorLinkActive": "#1554ad",
@@ -201,8 +214,11 @@
   "controlOutline": "#111a2c",
   "colorWarningOutline": "#2b2111",
   "colorErrorOutline": "#2a1215",
+  "controlItemBgHover": "rgba(255, 255, 255, 0.08)",
   "controlItemBgActive": "#111a2c",
   "controlItemBgActiveHover": "#112545",
+  "controlItemBgActiveDisabled": "rgba(255, 255, 255, 0.18)",
+  "controlTmpOutline": "rgba(255, 255, 255, 0.04)",
   "colorItemText": "rgba(255, 255, 255, 0.65)",
   "colorItemTextDisabled": "rgba(255, 255, 255, 0.25)",
   "tooltipBg": "#424242",
@@ -217,7 +233,7 @@
   "green-cs.7": "#339e7a",
   "green-cs.8": "#339e7a",
   "okxblack.1": "#edf0f7",
-  "okxblack.2": "#595f6e",
+  "okxblack.2": "#dce2ef",
   "okxblack.3": "#3f4761",
   "okxblack.4": "#293354",
   "okxblack.5": "#182047",
@@ -260,6 +276,8 @@
   "fontSizeHeading3": 24,
   "fontSizeHeading4": 20,
   "fontSizeHeading5": 16,
+  "fontWeightNormal": "Regular",
+  "fontWeightStrong": "Bold",
   "controlLineWidth": 1,
   "controlOutlineWidth": 2,
   "controlInteractiveSize": 16,
@@ -281,6 +299,167 @@
   "marginXXL": 48,
   "controlPaddingHorizontal": 12,
   "controlPaddingHorizontalSM": 8,
+  "Base.Base Normal": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSize} + 8",
+    "fontSize": "{fontSize}"
+  },
+  "Base.Base Strong": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSize} + 8",
+    "fontSize": "{fontSize}"
+  },
+  "Base.Base Underline": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSize} + 8",
+    "fontSize": "{fontSize}",
+    "textDecoration": "underline"
+  },
+  "Base.Base Delete": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSize} + 8",
+    "fontSize": "{fontSize}",
+    "textDecoration": "line-through"
+  },
+  "Base.Base Italic": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightItalic}",
+    "lineHeight": "{fontSize} + 8",
+    "fontSize": "{fontSize}",
+    "textDecoration": ""
+  },
+  "SM.SM Normal": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeSM} + 4",
+    "fontSize": "{fontSizeSM}"
+  },
+  "SM.SM Strong": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeSM} + 4",
+    "fontSize": "{fontSizeSM}"
+  },
+  "SM.SM Underline": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeSM} + 4",
+    "fontSize": "{fontSizeSM}",
+    "textDecoration": "underline"
+  },
+  "SM.SM Delete": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeSM} + 4",
+    "fontSize": "{fontSizeSM}",
+    "textDecoration": "line-through"
+  },
+  "SM.SM Italic": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightItalic}",
+    "lineHeight": "{fontSizeSM} + 4",
+    "fontSize": "{fontSizeSM}",
+    "textDecoration": "line-through"
+  },
+  "LG.LG Normal": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeLG} + 8",
+    "fontSize": "{fontSizeLG}"
+  },
+  "LG.LG Strong": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeLG} + 8",
+    "fontSize": "{fontSizeLG}"
+  },
+  "LG.LG Underline": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeLG} + 8",
+    "fontSize": "{fontSizeLG}",
+    "textDecoration": "underline"
+  },
+  "LG.LG Delete": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeLG} + 8",
+    "fontSize": "{fontSizeLG}",
+    "textDecoration": "line-through"
+  },
+  "LG.LG Italic": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightItalic}",
+    "lineHeight": "{fontSizeLG} + 8",
+    "fontSize": "{fontSizeLG}"
+  },
+  "XL.XL Normal": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeXL} + 8",
+    "fontSize": "{fontSizeXL}"
+  },
+  "XL.XL Strong": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeXL} + 8",
+    "fontSize": "{fontSizeXL}"
+  },
+  "XL.XL Underline": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeXL} + 8",
+    "fontSize": "{fontSizeXL}",
+    "textDecoration": "underline"
+  },
+  "XL.XL Delete": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightNormal}",
+    "lineHeight": "{fontSizeXL} + 8",
+    "fontSize": "{fontSizeXL}",
+    "textDecoration": "line-through"
+  },
+  "XL.XL Italic": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightItalic}",
+    "lineHeight": "{fontSizeXL} + 8",
+    "fontSize": "{fontSizeXL}"
+  },
+  "Heading.Heading 1": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeHeading1} + 8",
+    "fontSize": "{fontSizeHeading1}"
+  },
+  "Heading.Heading 2": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeHeading2} + 8",
+    "fontSize": "{fontSizeHeading2}"
+  },
+  "Heading.Heading 3": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeHeading3} + 8",
+    "fontSize": "{fontSizeHeading3}"
+  },
+  "Heading.Heading 4": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeHeading4} + 8",
+    "fontSize": "{fontSizeHeading4}"
+  },
+  "Heading.Heading 5": {
+    "fontFamily": "{fontFamily}",
+    "fontWeight": "{fontWeightStrong}",
+    "lineHeight": "{fontSizeHeading5} + 8",
+    "fontSize": "{fontSizeHeading5}"
+  },
+  "fontWeightItalic": "Italic",
   "paddingContentHorizontalLG": 24,
   "paddingContentVerticalLG": 16,
   "paddingContentHorizontal": 16,
@@ -295,20 +474,6 @@
   "focusWarning": "0px 0px 0px 2px rgb(0, 0, 0)",
   "colorMenuDarkBg": "#001529",
   "colorMenuSubItemBg": "#000c17",
-  "paddingTooltipContentVertical": 6,
-  "colorFillContent": "rgba(255, 255, 255, 0.12)",
-  "colorFillContentHover": "rgba(255, 255, 255, 0.18)",
-  "colorFillAlter": "rgba(255, 255, 255, 0.04)",
-  "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
-  "colorTextPlaceholder": "rgba(255, 255, 255, 0.25)",
-  "colorTextDisabled": "rgba(255, 255, 255, 0.25)",
-  "colorTextHeading": "rgba(255, 255, 255, 0.85)",
-  "colorTextLabel": "rgba(255, 255, 255, 0.65)",
-  "colorTextDescription": "rgba(255, 255, 255, 0.45)",
-  "colorBgTextHover": "rgba(255, 255, 255, 0.12)",
-  "colorBgTextActive": "rgba(255, 255, 255, 0.18)",
-  "colorIconHover": "rgba(255, 255, 255, 0.85)",
-  "controlItemBgHover": "rgba(255, 255, 255, 0.08)",
-  "controlItemBgActiveDisabled": "rgba(255, 255, 255, 0.18)",
-  "controlTmpOutline": "rgba(255, 255, 255, 0.04)"
+  "boxShadowButtonSolid": "0px 2px 0px 0px rgb(0, 0, 0)",
+  "paddingTooltipContentVertical": 6
 }
